@@ -1,0 +1,38 @@
+.tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+  grid-gap: 20px;
+
+  &__block {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 240px auto;
+
+    &_right-alined {
+      justify-content: end;
+      grid-template-columns: auto auto;
+    }
+  }
+
+  &__search {
+    max-width: 240px;
+    margin-right: 20px;
+  }
+
+  @include lg-max {
+    display: flex;
+    flex-direction: column;
+
+    &__block {
+      justify-content: flex-start;
+    }
+  }
+
+  @include sm-only {
+    &__block {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

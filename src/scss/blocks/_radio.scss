@@ -1,0 +1,43 @@
+.radio {
+  &__button {
+    display: block;
+    height: $global-input-height;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 105px;
+    color: rgba($text-color, 0.5);
+    position: relative;
+
+    &::after {
+      content: '';
+      inset: 0;
+      border: $input-border;
+      position: absolute;
+      transition: all 0.3s ease;
+    }
+
+    .radio:first-child &::after {
+      border-radius: $global-border-radius 0 0 $global-border-radius;
+    }
+
+    .radio:last-child &::after {
+      border-radius: 0 $global-border-radius $global-border-radius 0;
+    }
+
+    .radio:not(:first-child) &::after {
+      left: -1px;
+    }
+
+    input:checked + & {
+      color: $text-color;
+      &::after {
+        border-color: $border-color-active;
+      }
+    }
+  }
+}

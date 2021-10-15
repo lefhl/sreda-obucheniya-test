@@ -1,0 +1,14 @@
+.alert {
+  background-color: rgba($warning-color, 0.15);
+  font-size: 14px;
+  padding: 11px;
+  border-radius: $global-border-radius;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba($text-color, 0.5);
+
+  img {
+    margin-right: 10px;
+  }
+}

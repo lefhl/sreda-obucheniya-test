@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $main-font;
+  color: $text-color;
+}
+
+input {
+  border-radius: $global-border-radius;
+  height: $global-input-height;
+  padding: 13px 16px;
+  width: 100%;
+  border: $input-border;
+  transition: border-color 0.3s ease;
+  font-size: inherit;
+  &:focus {
+    outline: none;
+    border-color: $border-color-active;
+  }
+}
+
+.page {
+  padding-top: 18px;
+}

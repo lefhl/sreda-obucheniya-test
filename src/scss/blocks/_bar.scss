@@ -1,0 +1,15 @@
+.bar {
+  font-size: 12px;
+  color: $text-color;
+  background: linear-gradient(
+    to right,
+    #f8e71c 0%,
+    #f8e71c 45%,
+    #fff 45%,
+    #fff 100%
+  );
+  padding: 2px 6px;
+  margin-right: 20px;
+  border-radius: $global-border-radius;
+  white-space: nowrap;
+}

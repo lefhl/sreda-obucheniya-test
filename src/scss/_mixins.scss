@@ -1,0 +1,11 @@
+@mixin lg-max {
+  @media (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin sm-only {
+  @media (max-width: $sm) {
+    @content;
+  }
+}

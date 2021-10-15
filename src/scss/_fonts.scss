@@ -1,0 +1,19 @@
+$fontPath: '../fonts/';
+
+@font-face {
+  font-family: 'Harmonia Sans Pro Cyr';
+  src: url($fontPath + 'HarmoniaSansProCyr_semi.woff2') format('woff2'),
+    url($fontPath + 'HarmoniaSansProCyr_semi.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Harmonia Sans Pro Cyr';
+  src: url($fontPath + 'HarmoniaSansProCyr_reg.woff2') format('woff2'),
+    url($fontPath + 'HarmoniaSansProCyr_reg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
